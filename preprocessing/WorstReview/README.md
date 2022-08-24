@@ -1,0 +1,21 @@
+# Worst Game Reviews
+
+- dictionary 0~49
+- platform : 발매 플랫폼 string
+- title : 게임명 string
+- publisher : 퍼블리셔명 string
+- 0~99 : 내부 dict (100개 이하)
+  - score : 유저 점수
+  - review : 리뷰 내용 ex) 3번 리뷰 내용 : dict[3]['review']
+- static
+  - critic : 평론가 관련 수치 dict
+    - mean : 평점
+    - total : 전체 리뷰 수
+    - positive : 긍정 수
+    - mixed : 복합적 평가 수(so so 함)
+    - negative : 부정 수
+  - user : 유저 관련 수치 dict, 평론가와 동일
+- detail
+  - summary : 게임 소개
+  - 이 외에도 게임 등급, 장르 등을 table에서 긁어와 key : value 형태로 결합
+- review number : 마지막 리뷰의 index
